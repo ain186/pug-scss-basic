@@ -1,0 +1,57 @@
+mixin col(item)
+    .member 
+        img(src=`assets/images/team/${item.img}` alt=`${item.name}`)
+        p.member__name #{item.name}
+        p.member__position #{item.position}
+- const arr_members = {1: [{img: "1.NguyenThanhTungD.jpg", name: "Nguyễn Thanh Tùng D", position: "Strategy Operation Manager"},{img: "2.BuiXuanTrung.png", name: "Bùi Xuân Trung", position: "Strategy Operation Manager"}],2: [{img: "3.TranThiTinh.png", name: "Trịnh Thị Tình ", position: "BrSE"}],3: [{img: "5.NgoDuySon.jpg", name: "Ngô Duy Sơn", position: "BrSE"},{img: "6.VuTrungKien.jpg", name: "Vũ Trung Kiên", position: "Section Manager"},{img: "8.NguyenThiThanhLy.jpg", name: "Nguyễn Thị Thanh Ly", position: "QA Group Leader"}], 4: [{img: "9.TuBaDuc.jpg", name: "Từ Bá Đức", position: "BrSE"},{img: "10.HoVietTuan.jpg", name: "Hồ Việt Tuấn", position: "Ruby Engineer"}],5: [{img: "11.PhamQuangDinh.jpg", name: "Phạm Quang Định", position: "Developer Group Leader"}, {img: "12.VuTuyetMai.jpg", name: "Vũ Tuyết Mai", position: "BA Officer"}],6: [{img: "13.NguyenXuanMinhNhat.jpg", name: "Nguyễn Xuân Minh Nhật", position: "ISO Officer"},{img: "14.TranXuanDat.jpg", name: "Trần Xuân Đạt", position: ".NET Engineer"},{img: "16.TranDucPhong.jpg", name: "Trần Đức Phong", position: "Ruby Engineer"}],7: [{img: "17.PhamVanToan.jpg", name: "Phạm Văn Toàn", position: "R&D Expert"},{img: "18.NguyenMyHanh.jpg", name: "Nguyễn Mỹ Hạnh", position: "HR Officer"}],8: [{img: "19.PhungThiHoaiNgoc.jpg", name: "Phùng Thị Hoài Ngọc", position: "UI/UX Leader"},{img: "20.NguyenThiHuyenB.jpg", name: "Nguyễn Thị Huyền B", position: "Accounting Officer"}]}
+//- 1
+//- {img: "1.NguyenThanhTungD.jpg", name: "Nguyễn Thanh Tùng D", position: "Strategy Operation Manager"}
+//- {img: "2.BuiXuanTrung.png", name: "Bùi Xuân Trung", position: "Strategy Operation Manager"}
+//- 2
+//- {img: "3.TranThiTinh.png", name: "Trịnh Thị Tình ", position: "BrSE"}
+//- 3
+//- {img: "5.NgoDuySon.jpg", name: "Ngô Duy Sơn", position: "BrSE"}
+//- {img: "6.VuTrungKien.jpg", name: "Vũ Trung Kiên", position: "Section Manager"}
+//- {img: "8.NguyenThiThanhLy.jpg", name: "Nguyễn Thị Thanh Ly", position: "QA Group Leader"}
+//- 4
+//- {img: "9.TuBaDuc.jpg", name: "Từ Bá Đức", position: "BrSE"}
+//- {img: "10.HoVietTuan.jpg", name: "Hồ Việt Tuấn", position: "Ruby Engineer"}
+//- 5
+//- {img: "11.PhamQuangDinh.jpg", name: "Phạm Quang Định", position: "Developer Group Leader"}
+//- {img: "12.VuTuyetMai.jpg", name: "Vũ Tuyết Mai", position: "BA Officer"}
+//- 6
+//- {img: "13.NguyenXuanMinhNhat.jpg", name: "Nguyễn Xuân Minh Nhật", position: "ISO Officer"}
+//- {img: "14.TranXuanDat.jpg", name: "Trần Xuân Đạt", position: ".NET Engineer"}
+//- {img: "16.TranDucPhong.jpg", name: "Trần Đức Phong", position: "Ruby Engineer"}
+//- 7
+//- {img: "17.PhamVanToan.jpg", name: "Phạm Văn Toàn", position: "R&D Expert"}
+//- {img: "18.NguyenMyHanh.jpg", name: "Nguyễn Mỹ Hạnh", position: "HR Officer"}
+//- 8
+//- {img: "19.PhungThiHoaiNgoc.jpg", name: "Phùng Thị Hoài Ngọc", position: "UI/UX Leader"}
+//- {img: "20.NguyenThiHuyenB.jpg", name: "Nguyễn Thị Huyền B", position: "Accounting Officer"}
+section.team 
+    div.container 
+        p.team__title Giá trị cốt lõi 
+        div.team__content 
+            div.team__content__desc 
+                p Trân trọng sự đa dạng #[br] hỗ trợ phát triển cá nhân
+                div.team__items
+                    ul 
+                        li #[i.fas.fa-check] Be A Team
+                        li #[i.fas.fa-check] Get risky
+                        li #[i.fas.fa-check] Go fast
+                        li #[i.fas.fa-check] Stay focused
+                    ul 
+                        li #[i.fas.fa-check] think outside the box
+                        li #[i.fas.fa-check] be optimistic
+                        li #[i.fas.fa-check] be professional
+                button.btn(type="button") cơ hội nghề nghiệp
+            div.team__content__members
+                div.overflow 
+                    div.inner 
+                        each arr, index in arr_members
+                            .col 
+                                .member-col
+                                    each item, i in arr 
+                                        +col(item)
+

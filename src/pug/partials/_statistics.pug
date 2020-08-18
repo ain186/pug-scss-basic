@@ -1,0 +1,12 @@
+mixin card(item) 
+    div.statistics__content__card
+        img(src=`assets/images/statistics/${item.img}` alt="")
+        p.number #{item.amount}
+        p.property #{item.desc}
+- const arr_statistics = [{img: "planet-earth.png", amount: "4", desc: "Quốc gia"}, {img: "city.png", amount: "6",desc: "Thành phố"}, {img: "company-workers.png", amount: "1500", desc: "Nhân sự"}, {img: "handshake.png", amount: "200", desc: "Khách hàng"}, {img: "shared-folder.png", amount: "300", desc: "Dự án"}]
+
+section.statistics 
+    div.container 
+        div.statistics__content
+            each item, index in arr_statistics 
+                +card(item)

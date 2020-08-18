@@ -1,0 +1,45 @@
+mixin col-2(item) 
+    div.col-2 
+        div.slide 
+            img(src=`assets/images/action/${item.img}` alt=`${item.alt}`)
+            p.action__title #{item.title}
+            p.action__desc #{item.desc}
+            p.action__date #[i.far.fa-clock] #{item.date}
+- const arr_actions = [{title: "Lễ tốt nghiệp của Sun* Academy 2020", desc: "Vừa qua, Sun* Academy đã tổ chức Lễ tốt nghiệp cho các lớp: Lập trình Ruby, Lập trình PHP, và Lập trình Android. Với đầu vào gồm các học viên chuyên ngành IT và cả các chuyên ngành khác, khóa học đã thành công tốt đẹp với tỉ lệ tìm được việc làm sau khi tốt nghiệp là 100%.", date: "30/06/2020", img: "1.jpg", alt: ""},{title: "Sun* Startups và Songhan Incubator khai mạc chương trình “Ươm tạo khởi nghiệp”", desc: "15/06 vừa qua, Sun* Startups Studio Vietnam (SSV) kết hợp cùng Songhan Incubator khai mạc chương trình “Ươm tạo khởi nghiệp” Batch 1.", date: "15/06/2020", img: "2.jpg", alt: ""},{title: "Tưng bừng cùng Men’s day 2020", desc: " Ngày thứ 6 cuối cùng của tháng 5 đã đến, với ngày lễ đặc biệt dành riêng cho cánh mày râu công ty. Tại các văn phòng Sun*, có thể dễ dàng bắt gặp khung cảnh các chị em rộn ràng chuẩn bị cho sự kiện một năm chỉ có một lần.", date: "29/05/2020", img: "3.jpg", alt: ""},{title: "Sunners hào hứng quay lại văn phòng sau 2 tháng làm việc remote với món quà đặc biệt", desc: "Các thành viên đã nhận được hai món quà ý nghĩa từ công ty, đó là hai chiếc khẩu trang vải kháng khuẩn và quà công đoàn. Đây đã là lần thứ hai thành viên Sun* được công ty “tiếp sức” khẩu trang cho mùa đại dịch.", date: "08/05/2020", img: "4.jpg", alt: ""},{title: "Chương trình đặc biệt dành tặng chị em Sunners nhân dịp 8/3", desc: "Trong không khí nô nức mừng ngày Quốc tế Phụ nữ 8/3, những bông hồng tại văn phòng Hà Nội, Đà Nẵng và Hồ Chí Minh tưng bừng mừng nhộn nhịp tham dự chương trình đặc biệt do các nam Sunners dày công chuẩn bị.", date: "08/03/2020", img: "5.jpg", alt: ""},{title: "Chương trình Chào Xuân Canh Tý được tổ chức tại các văn phòng Sun*", desc: "Sáng 30/1/2020, Sunners 3 miền đã chính thức quay trở lại công việc sau đợt nghỉ tết nguyên đàn kéo dài 7 ngày. Như thường lệ, hoạt động chào xuân Canh Tý được tổ chức ở tất cả các văn phòng nhằm mang đến không khí sôi động.", date: "30/01/2020", img: "6.jpg", alt: ""},{title: "Sun* Annual Awards 2019 với chủ đề “Khởi nguyên rực sáng”", desc: "", date: "30/12/2019", img: "7.jpg", alt: ""},{title: "Lễ công bố đề cử Sun* Annual Awards 2019", desc: "", date: "21/11/2019", img: "8.jpg", alt: ""},{title: "The High Conference 2019 – Chương trình học thuật thường niên của The High", desc: "", date: "16/11/2019", img: "9.jpg", alt: ""},{title: "Sự kiện UI CROSSROADS: XPERIENCE & BEYOND 2019 do Sun* phối hợp tổ chức cùng AngelHack Vietnam", desc: "", date: "02/11/2019", img: "10.jpg", alt: ""},{title: "Sun* hackathon 2019 – sự kiện hackathon nội bộ tại Sun*", desc: "", date: "20/10/2019", img: "11.jpg", alt: ""},{title: "Sun* đồng hành cùng sự kiện DevFest-Hackathon 2019 tại Đà Nẵng", desc: "", date: "13/10/2019", img: "12.jpg", alt: ""}]
+//- {title: "Lễ tốt nghiệp của Sun* Academy 2020", desc: "Vừa qua, Sun* Academy đã tổ chức Lễ tốt nghiệp cho các lớp: Lập trình Ruby, Lập trình PHP, và Lập trình Android. Với đầu vào gồm các học viên chuyên ngành IT và cả các chuyên ngành khác, khóa học đã thành công tốt đẹp với tỉ lệ tìm được việc làm sau khi tốt nghiệp là 100%.", date: "30/06/2020", img: "1.jpg", alt: ""},
+//- {title: "Sun* Startups và Songhan Incubator khai mạc chương trình “Ươm tạo khởi nghiệp”", desc: "15/06 vừa qua, Sun* Startups Studio Vietnam (SSV) kết hợp cùng Songhan Incubator khai mạc chương trình “Ươm tạo khởi nghiệp” Batch 1.", date: "15/06/2020", img: "2.jpg", alt: ""},
+//- {title: "Tưng bừng cùng Men’s day 2020", desc: " Ngày thứ 6 cuối cùng của tháng 5 đã đến, với ngày lễ đặc biệt dành riêng cho cánh mày râu công ty. Tại các văn phòng Sun*, có thể dễ dàng bắt gặp khung cảnh các chị em rộn ràng chuẩn bị cho sự kiện một năm chỉ có một lần.", date: "29/05/2020", img: "3.jpg", alt: ""},
+//- {title: "Sunners hào hứng quay lại văn phòng sau 2 tháng làm việc remote với món quà đặc biệt", desc: "Các thành viên đã nhận được hai món quà ý nghĩa từ công ty, đó là hai chiếc khẩu trang vải kháng khuẩn và quà công đoàn. Đây đã là lần thứ hai thành viên Sun* được công ty “tiếp sức” khẩu trang cho mùa đại dịch.", date: "08/05/2020", img: "4.jpg", alt: ""},
+//- {title: "Chương trình đặc biệt dành tặng chị em Sunners nhân dịp 8/3", desc: "Trong không khí nô nức mừng ngày Quốc tế Phụ nữ 8/3, những bông hồng tại văn phòng Hà Nội, Đà Nẵng và Hồ Chí Minh tưng bừng mừng nhộn nhịp tham dự chương trình đặc biệt do các nam Sunners dày công chuẩn bị.", date: "08/03/2020", img: "5.jpg", alt: ""},
+//- {title: "Chương trình Chào Xuân Canh Tý được tổ chức tại các văn phòng Sun*", desc: "Sáng 30/1/2020, Sunners 3 miền đã chính thức quay trở lại công việc sau đợt nghỉ tết nguyên đàn kéo dài 7 ngày. Như thường lệ, hoạt động chào xuân Canh Tý được tổ chức ở tất cả các văn phòng nhằm mang đến không khí sôi động.", date: "30/01/2020", img: "6.jpg", alt: ""},
+//- {title: "Sun* Annual Awards 2019 với chủ đề “Khởi nguyên rực sáng”", desc: "", date: "30/12/2019", img: "7.jpg", alt: ""},
+//- {title: "Lễ công bố đề cử Sun* Annual Awards 2019", desc: "", date: "21/11/2019", img: "8.jpg", alt: ""},
+//- {title: "The High Conference 2019 – Chương trình học thuật thường niên của The High", desc: "", date: "16/11/2019", img: "9.jpg", alt: ""},
+//- {title: "Sự kiện UI CROSSROADS: XPERIENCE & BEYOND 2019 do Sun* phối hợp tổ chức cùng AngelHack Vietnam", desc: "", date: "02/11/2019", img: "10.jpg", alt: ""},
+//- {title: "Sun* hackathon 2019 – sự kiện hackathon nội bộ tại Sun*", desc: "", date: "20/10/2019", img: "11.jpg", alt: ""},
+//- {title: "Sun* đồng hành cùng sự kiện DevFest-Hackathon 2019 tại Đà Nẵng", desc: "", date: "13/10/2019", img: "12.jpg", alt: ""}
+section.action
+    div.container  
+        div.action__content 
+            p.title-cultural văn hóa
+            p.title-action hoạt động nổi bật
+            div.action__list 
+                input#slide1(type="radio" name="slider" checked)
+                input#slide2(type="radio" name="slider")
+                input#slide3(type="radio" name="slider")
+                input#slide4(type="radio" name="slider")
+                input#slide5(type="radio" name="slider")
+                input#slide6(type="radio" name="slider")
+                div.slides 
+                    div.overflow 
+                        div.inner-2 
+                            each item, index in arr_actions
+                                +col-2(item)
+
+                div.bullets
+                    label(for="slide1")
+                    label(for="slide2")
+                    label(for="slide3")
+                    label(for="slide4")
+                    label(for="slide5")
+                    label(for="slide6")           

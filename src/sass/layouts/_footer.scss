@@ -1,0 +1,116 @@
+footer {
+    padding-top: 100px;
+    background-image: url("../../../assets/images/bg/footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer__content {
+    padding: 0 20px;
+    color: #fff;
+}
+
+.footer__content .footer__top p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.footer__content .footer__top {
+    margin-bottom: 70px;
+}
+
+.footer__content .footer__top .offices {
+    width: 100%;
+    display: flex;
+}
+
+.footer__content .footer__top .offices .office {
+    width: 25%;
+    padding-right: 15px;
+}
+
+.footer__content h5 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.footer__content .footer__top .offices .office h6 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.footer__content .footer__top .offices .office p {
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.footer__middle {
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.footer__middle .inactive {
+    display: flex;
+}
+
+.footer__middle .inactive li {
+    padding-right: 10px;
+    border-right: 2px solid gray;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.footer__middle .inactive li:last-child {
+    border: none;
+}
+
+.footer__middle .inactive li:last-child a {
+    color: red;
+}
+
+.footer__bottom {
+    padding: 30px 0;
+    font-weight: 300;
+    display: flex;
+}
+
+.footer__bottom p {
+    line-height: 30px;
+}
+
+.footer__bottom .social {
+    margin-left: auto;
+    display: flex;
+}
+
+.footer__bottom .social p {
+    display: inline;
+    line-height: 30px;
+}
+
+.footer__bottom .social ul {
+    display: flex;
+}
+
+.footer__bottom .social ul li {
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.footer__bottom .social ul li a {
+    color: #fff;
+}

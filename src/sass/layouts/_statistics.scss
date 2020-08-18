@@ -1,0 +1,25 @@
+.statistics {
+    padding: 100px 0;
+    background-image: url("./bg_business-report.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.statistics__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.statistics__content .statistics__content__card {
+    width: 20%;
+    padding: 0 20px;
+    text-align: center;
+    color: #fff;
+}
+
+p.number {
+    font-size: 36px;
+    line-height: 60px;
+}

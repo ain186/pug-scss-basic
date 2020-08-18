@@ -1,0 +1,16 @@
+mixin slide(n,i)
+    div.col-3 
+        div.slide 
+            img(src=`assets/images/client/logo_top_${i}.png`)
+            img(src=`assets/images/client/logo_top_${n}.png`)
+- const arrClients = {"adways": "altplus", "ascend": "basic","cakes": "comnico","cuon": "cyberagent","datakit": "tsumiki","eole": "eventregist","eyemovic": "fello","greenromp": "hobonichi","imageworks": "itandi","keiouniversity": "mangania","mindpalette": "myprint","open8": "pixta","poin": "razona","septeni": "sonicmoov","summertimestudio": "uzabase","valuecommerce": "verbe","yahoo_insyoku": "zdc",}            
+section.client 
+    div.container 
+        div.client__content 
+            p.client__content__title khách hàng tiêu biểu
+            div.client__content__list 
+                div.slides 
+                    div.overflow
+                        div.inner-3 
+                            for n, i in arrClients 
+                                +slide(n,i)

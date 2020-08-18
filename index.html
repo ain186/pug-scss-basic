@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vuong Tran">
+    <meta name="description" content="The Sun Web using PUG, SCSS.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/favicon-32x32.png" type="image/x-icon">
+    <title>Pug & SASS</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  </head>
+  <body>
+    <header> 
+      <nav> <a class="logo"><img src="assets/icons/Sun-Logotype-RGB-01.png" alt="logo"></a>
+        <div class="menu"> 
+          <input id="res-menu" type="checkbox">
+          <label for="res-menu"> <i class="fa fa-bars fa-2x" id="sign-open"> </i><i class="fa fa-times fa-3x" id="sign-close"> </i></label>
+          <ul class="nav-links"> 
+            <li><a>Cơ hội nghề nghiệp</a></li>
+            <li> <a>Liên hệ</a></li>
+          </ul>
+          <div class="langset dropdown"> 
+            <button class="dropdown__btn">Tiếng Việt<img src="assets/icons/nav-arrow-down.png" alt="nav-arrow-down"></button>
+            <div class="dropdown__content"> <a>English </a></div>
+          </div>
+        </div>
+      </nav>
+      <div class="banner container"> 
+        <div class="banner__content"> 
+          <p class="banner__content__hello">Hello, world.</p>
+          <h2 class="banner__content__title">JOIN US & MAKE AWESOME THINGS THAT MATTER</h2>
+          <p class="banner__content__sentense"> <span>Hãy tưởng tượng ra một thế giới nơi tất cả mọi người đều được tự do tạo ra những giá trị tuyệt vời, có sức mạnh thay đổi cuộc sống. Chúng tôi theo đuổi đam mê của chính mình, cùng nhìn về tương lai.</span><span>Không chỉ tồn tại, chúng tôi sống để thực hiện hóa những ước mơ.</span><span>Tại Sun*, tất cả các thành viên luôn nỗ lực đem đến lựa chọn tốt hơn cho mọi người. Đứng ở điểm giao thoa giữa công nghệ, kinh doanh và giáo dục, chúng tôi sẽ mang lại sự thay đổi tích cực cho toàn xã hội.</span></p>
+          <p class="banner__content__saying">We are obsessed with making awesome things with awesome people.</p>
+          <p class="banner__content__author">Sun* Inc. CEO – Taihei Kobayashi</p>
+        </div>
+      </div>
+    </header>
+    <section class="vision"> 
+      <div class="container"> 
+        <div class="vision__content"> 
+          <p class="vision__content__title">Tầm nhìn </p>
+          <p class="vision__content__desc">Tạo ra thế giới bình đẳng nơi mỗi người đều có cơ hội mang lại những giá trị “Awesome”.</p>
+          <p class="vision__content__title">Sứ mệnh</p>
+          <p class="vision__content__desc">Cùng những con người đam mê thử thách, chúng tôi tạo ra thay đổi tích cực cho xã hội thông qua các sản phẩm và lĩnh vực kinh doanh.</p>
+        </div>
+      </div>
+    </section>
+    <section class="service"> 
+      <div class="container"> 
+        <p class="service__title">THẾ MẠNH CỦA CHÚNG TÔI</p>
+        <div class="service__content"> 
+          <div class="service__content__env"> 
+            <h2>môi trường quốc tế không ngừng sáng tạo</h2>
+            <p class="desc">
+              Sun* Inc. (tiền thân là Framgia Inc.), được thành lập vào năm 2012, là một Digital Creative Studio hiện có hơn 1500 thành viên tại 6 thành phố ở 4 quốc gia Châu Á. Mang trên mình sứ mệnh kết nối doanh nghiệp toàn cầu với đội ngũ nhân
+              lực sáng giá nhất châu Á, từ khi thành lập cho đến nay, Sun* luôn nỗ lực để đem tới cho thế giới những giá trị “Awesome”.
+            </p>
+            <p class="desc">
+              Chúng tôi liên tục tham gia tư vấn cho khách hàng với tư cách là công ty chuyên nghiệp trên nhiều lĩnh vực khác nhau, không chỉ về lập trình hay thiết kế mà cả quản lý dự án, tư vấn thiết kế và kinh doanh, cung cấp tài chính hay marketing.
+              Cùng với việc gia tăng nhân sự, mảng cung cấp giải pháp của chúng tôi cũng được mở rộng. Không chỉ tạo ra các sản phẩm phần mềm, Sun* còn tạo ra các dịch vụ, lĩnh vực kinh doanh, và thành lập công ty con.
+            </p>
+            <p class="desc">
+              Sun* mang hình ảnh của một “Studio”, tập trung những chuyên gia luôn luôn đam mê tìm kiếm giải pháp. Thế giới mà chúng tôi đang hướng tới là thế giới mà ở đó có những con người mang đam mê và hoài bão tạo ra giá trị mới khiến xã hội
+              trở nên tốt đẹp hơn.
+            </p>
+            <p class="desc">Để xứng đáng với cái tên gọi “Mặt trời”, chúng tôi sẽ toàn tâm toàn ý, nỗ lực hết mình để nuôi dưỡng mầm ươm mang tên “Awesome things”.</p>
+          </div>
+          <div class="service__content__items"> 
+            <div class="column-1"> 
+              <div class="service__item"> 
+                <div class="item-header"> <img src="assets/icons/code-design.png" alt="code-design" width="36" height="31">
+                  <h3>SOFTWARE DEVELOPMENT</h3>
+                </div>
+                <p><i class="far fa-check-circle"></i>
+                  <b>Outsourcing:</b>
+                  Ứng dụng mô hình khởi nghiệp Lean startup và Agile, hợp tác thành công với rất nhiều startup công nghệ và các công ty lớn để phát triển các dự án phần mềm yêu cầu
+                  tốc độ, đổi mới và sáng tạo.
+                  <br>
+                  <i class="far fa-check-circle"></i>
+                  <b>Products:</b>
+                  Xây dựng các sản phẩm công nghệ của riêng mình: Viblo (Platform chia sẻ kiến thức IT dành riêng cho các kỹ sư Việt Nam); CI/CD (môi trường tích hợp và deploy code một
+                  cách liên tục và tự động); Talky Bird (ứng dụng luyện giao tiếp tiếng Nhật sử dụng công nghệ trí tuệ nhân tạo)
+                </p>
+              </div>
+              <div class="service__item"> 
+                <div class="item-header"><img src="assets/icons/learn.png" alt="learn" width="36" height="31">
+                  <h3>RESEARCH &amp; DEVELOPMENT</h3>
+                </div>
+                <p><i class="far fa-check-circle"></i>  
+                  Nghiên cứu và ứng dụng công nghệ 4.0 trong phát triển sản phẩm:
+                  <br>
+                  – Ứng dụng Deep Learning vào các bài toán xử lý ngôn ngữ tự nhiên với Tiếng Việt và phân tích năng lực nhân sự.
+                  <br>
+                  – Ứng dụng Machine Learning cùng các kiến thức về Recommendation System và Document Retrieval xây dựng hệ thống phân tích, đề xuất được những ứng viên phù hợp cho dự án.
+                  <br>
+                  – Ứng dụng VR-AR phát triển phần mềm Virtual Driving (phần mềm học lái xe thực tế ảo).
+                  <br>
+                  – Nghiên cứu công nghệ lõi và phát triển game trên nền tảng công nghệ Blockchain (Cipher Cascade).
+                </p>
+              </div>
+            </div>
+            <div class="column-2"> 
+              <div class="service__item">
+                <div class="item-header"><img src="assets/icons/mobile-app-developing.png" alt="mobile app dev" width="36" height="31">
+                  <h3>DIGITAL TRANSFORMATION</h3>
+                </div>
+                <p><i class="far fa-check-circle"></i> 
+                  Hỗ trợ, phát triển các giải pháp chuyển đổi kỹ thuật số để giải quyết các vấn đề kinh doanh của doanh nghiệp lớn. Hiện tại chúng tôi đang thực hiện 5 dự án hỗ trợ trong mảng này.
+                </p>
+              </div>
+              <div class="service__item">
+                <div class="item-header"><img src="assets/icons/Nav-Icons-RosettaOpportunity.png" alt="Nav-Icons-RosettaOpportunity" width="36" height="31">
+                  <h3>NEW BUSINESS CO-CREATE</h3>
+                </div>
+                <p><i class="far fa-check-circle"></i> Phát huy các đặc trưng kinh doanh kết hợp cùng năng lực kỹ thuật mà Sun* đang có, tạo dựng những lĩnh vực kinh doanh mới. Hiện tại có 5 dự án đang trong quá trình thực hiện.</p>
+              </div>
+              <div class="service__item">
+                <div class="item-header"><img src="assets/icons/startups-medium-300x225.png" alt="startups" width="36" height="31">
+                  <h3>STARTUP</h3>
+                </div>
+                <p><i class="far fa-check-circle"></i> 
+                  Sun* Startups được thành lập năm 2018, tập trung vào lĩnh vực ươm tạo Startup. Chúng tôi tìm kiếm, đồng hành cùng các ý tưởng khởi nghiệp có ứng dụng công nghệ thông tin tạo ra những thay
+                  đổi tích cực cho cuộc sống. Với các Startup tiềm năng, chúng tôi đầu tư nguồn lực giúp họ phát triển vững chắc qua các giai đoạn: ý tưởng (Idea), xây dựng giải pháp (Build) và tăng tốc (Boost).<br> 
+                  Sức mạnh Sun* Startups là sự kết hợp giữa tư duy khoa học về Startup, nguồn lực nội tại và mô hình liên kết mở trong hệ sinh thái khởi nghiệp.
+                </p>
+              </div>
+              <div class="service__item">
+                <div class="item-header"><img src="assets/icons/Edu.png" alt="web-development" width="36" height="36">
+                  <h3>IT TALENT EDUCATION</h3>
+                </div>
+                <p><i class="far fa-check-circle"></i> Đào tạo nhân sự IT tiếng Nhật, kết hợp cùng các trường Đại học hàng đầu của Việt Nam, thành lập Trung tâm đào tạo lập trình Awesome Academy, du học IT tại Philippines, Programming school dành cho sinh viên đại học của Nhật.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client"> 
+      <div class="container"> 
+        <div class="client__content"> 
+          <p class="client__content__title">khách hàng tiêu biểu</p>
+          <div class="client__content__list"> 
+            <div class="slides"> 
+              <div class="overflow">
+                <div class="inner-3"> 
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_adways.png"><img src="assets/images/client/logo_top_altplus.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_ascend.png"><img src="assets/images/client/logo_top_basic.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_cakes.png"><img src="assets/images/client/logo_top_comnico.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_cuon.png"><img src="assets/images/client/logo_top_cyberagent.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_datakit.png"><img src="assets/images/client/logo_top_tsumiki.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_eole.png"><img src="assets/images/client/logo_top_eventregist.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_eyemovic.png"><img src="assets/images/client/logo_top_fello.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_greenromp.png"><img src="assets/images/client/logo_top_hobonichi.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_imageworks.png"><img src="assets/images/client/logo_top_itandi.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_keiouniversity.png"><img src="assets/images/client/logo_top_mangania.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_mindpalette.png"><img src="assets/images/client/logo_top_myprint.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_open8.png"><img src="assets/images/client/logo_top_pixta.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_poin.png"><img src="assets/images/client/logo_top_razona.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_septeni.png"><img src="assets/images/client/logo_top_sonicmoov.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_summertimestudio.png"><img src="assets/images/client/logo_top_uzabase.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_valuecommerce.png"><img src="assets/images/client/logo_top_verbe.png"></div>
+                      </div>
+                      <div class="col-3"> 
+                        <div class="slide"> <img src="assets/images/client/logo_top_yahoo_insyoku.png"><img src="assets/images/client/logo_top_zdc.png"></div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statistics"> 
+      <div class="container"> 
+        <div class="statistics__content">
+              <div class="statistics__content__card"><img src="assets/images/statistics/planet-earth.png" alt="">
+                <p class="number">4</p>
+                <p class="property">Quốc gia</p>
+              </div>
+              <div class="statistics__content__card"><img src="assets/images/statistics/city.png" alt="">
+                <p class="number">6</p>
+                <p class="property">Thành phố</p>
+              </div>
+              <div class="statistics__content__card"><img src="assets/images/statistics/company-workers.png" alt="">
+                <p class="number">1500</p>
+                <p class="property">Nhân sự</p>
+              </div>
+              <div class="statistics__content__card"><img src="assets/images/statistics/handshake.png" alt="">
+                <p class="number">200</p>
+                <p class="property">Khách hàng</p>
+              </div>
+              <div class="statistics__content__card"><img src="assets/images/statistics/shared-folder.png" alt="">
+                <p class="number">300</p>
+                <p class="property">Dự án</p>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="team"> 
+      <div class="container"> 
+        <p class="team__title">Giá trị cốt lõi </p>
+        <div class="team__content"> 
+          <div class="team__content__desc"> 
+            <p>Trân trọng sự đa dạng <br> hỗ trợ phát triển cá nhân</p>
+            <div class="team__items">
+              <ul> 
+                <li><i class="fas fa-check"></i> Be A Team</li>
+                <li><i class="fas fa-check"></i> Get risky</li>
+                <li><i class="fas fa-check"></i> Go fast</li>
+                <li><i class="fas fa-check"></i> Stay focused</li>
+              </ul>
+              <ul> 
+                <li><i class="fas fa-check"></i> think outside the box</li>
+                <li><i class="fas fa-check"></i> be optimistic</li>
+                <li><i class="fas fa-check"></i> be professional</li>
+              </ul>
+            </div>
+            <button class="btn" type="button">cơ hội nghề nghiệp</button>
+          </div>
+          <div class="team__content__members">
+            <div class="overflow"> 
+              <div class="inner"> 
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/1.NguyenThanhTungD.jpg" alt="Nguyễn Thanh Tùng D">
+                          <p class="member__name">Nguyễn Thanh Tùng D</p>
+                          <p class="member__position">Strategy Operation Manager</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/2.BuiXuanTrung.png" alt="Bùi Xuân Trung">
+                          <p class="member__name">Bùi Xuân Trung</p>
+                          <p class="member__position">Strategy Operation Manager</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/3.TranThiTinh.png" alt="Trịnh Thị Tình ">
+                          <p class="member__name">Trịnh Thị Tình </p>
+                          <p class="member__position">BrSE</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/5.NgoDuySon.jpg" alt="Ngô Duy Sơn">
+                          <p class="member__name">Ngô Duy Sơn</p>
+                          <p class="member__position">BrSE</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/6.VuTrungKien.jpg" alt="Vũ Trung Kiên">
+                          <p class="member__name">Vũ Trung Kiên</p>
+                          <p class="member__position">Section Manager</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/8.NguyenThiThanhLy.jpg" alt="Nguyễn Thị Thanh Ly">
+                          <p class="member__name">Nguyễn Thị Thanh Ly</p>
+                          <p class="member__position">QA Group Leader</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/9.TuBaDuc.jpg" alt="Từ Bá Đức">
+                          <p class="member__name">Từ Bá Đức</p>
+                          <p class="member__position">BrSE</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/10.HoVietTuan.jpg" alt="Hồ Việt Tuấn">
+                          <p class="member__name">Hồ Việt Tuấn</p>
+                          <p class="member__position">Ruby Engineer</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/11.PhamQuangDinh.jpg" alt="Phạm Quang Định">
+                          <p class="member__name">Phạm Quang Định</p>
+                          <p class="member__position">Developer Group Leader</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/12.VuTuyetMai.jpg" alt="Vũ Tuyết Mai">
+                          <p class="member__name">Vũ Tuyết Mai</p>
+                          <p class="member__position">BA Officer</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/13.NguyenXuanMinhNhat.jpg" alt="Nguyễn Xuân Minh Nhật">
+                          <p class="member__name">Nguyễn Xuân Minh Nhật</p>
+                          <p class="member__position">ISO Officer</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/14.TranXuanDat.jpg" alt="Trần Xuân Đạt">
+                          <p class="member__name">Trần Xuân Đạt</p>
+                          <p class="member__position">.NET Engineer</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/16.TranDucPhong.jpg" alt="Trần Đức Phong">
+                          <p class="member__name">Trần Đức Phong</p>
+                          <p class="member__position">Ruby Engineer</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/17.PhamVanToan.jpg" alt="Phạm Văn Toàn">
+                          <p class="member__name">Phạm Văn Toàn</p>
+                          <p class="member__position">R&amp;D Expert</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/18.NguyenMyHanh.jpg" alt="Nguyễn Mỹ Hạnh">
+                          <p class="member__name">Nguyễn Mỹ Hạnh</p>
+                          <p class="member__position">HR Officer</p>
+                        </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="member-col">
+                        <div class="member"> <img src="assets/images/team/19.PhungThiHoaiNgoc.jpg" alt="Phùng Thị Hoài Ngọc">
+                          <p class="member__name">Phùng Thị Hoài Ngọc</p>
+                          <p class="member__position">UI/UX Leader</p>
+                        </div>
+                        <div class="member"> <img src="assets/images/team/20.NguyenThiHuyenB.jpg" alt="Nguyễn Thị Huyền B">
+                          <p class="member__name">Nguyễn Thị Huyền B</p>
+                          <p class="member__position">Accounting Officer</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="action">
+      <div class="container"> 
+        <div class="action__content"> 
+          <p class="title-cultural">văn hóa</p>
+          <p class="title-action">hoạt động nổi bật</p>
+          <div class="action__list"> 
+            <input id="slide1" type="radio" name="slider" checked>
+            <input id="slide2" type="radio" name="slider">
+            <input id="slide3" type="radio" name="slider">
+            <input id="slide4" type="radio" name="slider">
+            <input id="slide5" type="radio" name="slider">
+            <input id="slide6" type="radio" name="slider">
+            <div class="slides"> 
+              <div class="overflow"> 
+                <div class="inner-2"> 
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/1.jpg" alt="">
+                          <p class="action__title">Lễ tốt nghiệp của Sun* Academy 2020</p>
+                          <p class="action__desc">Vừa qua, Sun* Academy đã tổ chức Lễ tốt nghiệp cho các lớp: Lập trình Ruby, Lập trình PHP, và Lập trình Android. Với đầu vào gồm các học viên chuyên ngành IT và cả các chuyên ngành khác, khóa học đã thành công tốt đẹp với tỉ lệ tìm được việc làm sau khi tốt nghiệp là 100%.</p>
+                          <p class="action__date"><i class="far fa-clock"></i> 30/06/2020</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/2.jpg" alt="">
+                          <p class="action__title">Sun* Startups và Songhan Incubator khai mạc chương trình “Ươm tạo khởi nghiệp”</p>
+                          <p class="action__desc">15/06 vừa qua, Sun* Startups Studio Vietnam (SSV) kết hợp cùng Songhan Incubator khai mạc chương trình “Ươm tạo khởi nghiệp” Batch 1.</p>
+                          <p class="action__date"><i class="far fa-clock"></i> 15/06/2020</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/3.jpg" alt="">
+                          <p class="action__title">Tưng bừng cùng Men’s day 2020</p>
+                          <p class="action__desc"> Ngày thứ 6 cuối cùng của tháng 5 đã đến, với ngày lễ đặc biệt dành riêng cho cánh mày râu công ty. Tại các văn phòng Sun*, có thể dễ dàng bắt gặp khung cảnh các chị em rộn ràng chuẩn bị cho sự kiện một năm chỉ có một lần.</p>
+                          <p class="action__date"><i class="far fa-clock"></i> 29/05/2020</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/4.jpg" alt="">
+                          <p class="action__title">Sunners hào hứng quay lại văn phòng sau 2 tháng làm việc remote với món quà đặc biệt</p>
+                          <p class="action__desc">Các thành viên đã nhận được hai món quà ý nghĩa từ công ty, đó là hai chiếc khẩu trang vải kháng khuẩn và quà công đoàn. Đây đã là lần thứ hai thành viên Sun* được công ty “tiếp sức” khẩu trang cho mùa đại dịch.</p>
+                          <p class="action__date"><i class="far fa-clock"></i> 08/05/2020</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/5.jpg" alt="">
+                          <p class="action__title">Chương trình đặc biệt dành tặng chị em Sunners nhân dịp 8/3</p>
+                          <p class="action__desc">Trong không khí nô nức mừng ngày Quốc tế Phụ nữ 8/3, những bông hồng tại văn phòng Hà Nội, Đà Nẵng và Hồ Chí Minh tưng bừng mừng nhộn nhịp tham dự chương trình đặc biệt do các nam Sunners dày công chuẩn bị.</p>
+                          <p class="action__date"><i class="far fa-clock"></i> 08/03/2020</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/6.jpg" alt="">
+                          <p class="action__title">Chương trình Chào Xuân Canh Tý được tổ chức tại các văn phòng Sun*</p>
+                          <p class="action__desc">Sáng 30/1/2020, Sunners 3 miền đã chính thức quay trở lại công việc sau đợt nghỉ tết nguyên đàn kéo dài 7 ngày. Như thường lệ, hoạt động chào xuân Canh Tý được tổ chức ở tất cả các văn phòng nhằm mang đến không khí sôi động.</p>
+                          <p class="action__date"><i class="far fa-clock"></i> 30/01/2020</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/7.jpg" alt="">
+                          <p class="action__title">Sun* Annual Awards 2019 với chủ đề “Khởi nguyên rực sáng”</p>
+                          <p class="action__desc"></p>
+                          <p class="action__date"><i class="far fa-clock"></i> 30/12/2019</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/8.jpg" alt="">
+                          <p class="action__title">Lễ công bố đề cử Sun* Annual Awards 2019</p>
+                          <p class="action__desc"></p>
+                          <p class="action__date"><i class="far fa-clock"></i> 21/11/2019</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/9.jpg" alt="">
+                          <p class="action__title">The High Conference 2019 – Chương trình học thuật thường niên của The High</p>
+                          <p class="action__desc"></p>
+                          <p class="action__date"><i class="far fa-clock"></i> 16/11/2019</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/10.jpg" alt="">
+                          <p class="action__title">Sự kiện UI CROSSROADS: XPERIENCE &amp; BEYOND 2019 do Sun* phối hợp tổ chức cùng AngelHack Vietnam</p>
+                          <p class="action__desc"></p>
+                          <p class="action__date"><i class="far fa-clock"></i> 02/11/2019</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/11.jpg" alt="">
+                          <p class="action__title">Sun* hackathon 2019 – sự kiện hackathon nội bộ tại Sun*</p>
+                          <p class="action__desc"></p>
+                          <p class="action__date"><i class="far fa-clock"></i> 20/10/2019</p>
+                        </div>
+                      </div>
+                      <div class="col-2"> 
+                        <div class="slide"> <img src="assets/images/action/12.jpg" alt="">
+                          <p class="action__title">Sun* đồng hành cùng sự kiện DevFest-Hackathon 2019 tại Đà Nẵng</p>
+                          <p class="action__desc"></p>
+                          <p class="action__date"><i class="far fa-clock"></i> 13/10/2019</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="bullets">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+              <label for="slide5"></label>
+              <label for="slide6">          </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="career">
+      <div class="container">
+        <h2>Gia nhập đội ngũ sáng tạo</h2>
+        <button class="btn" type="button">cơ hội nghề nghiệp</button>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__top">
+            <p>Sun* Inc.</p>
+            <div class="offices">
+              <div class="office">
+                <h5>HaNoi Office</h5>
+                <h6>Keangnam</h6>
+                <p><i class="fas fa-map-marker-alt"></i> 3F Keangnam Hanoi Landmark 72 Tower, Plot E6, Pham Hung Road, Nam Tu Liem Dist., Ha Noi</p>
+                <p><i class="fas fa-phone-alt"></i> 84-24-3795-5417</p>
+                <h6>Handico</h6>
+                <p><i class="fas fa-map-marker-alt"></i> 11F Handico Building, Pham Hung Road, Nam Tu Liem Dist., Ha Noi</p>
+              </div>
+              <div class="office">
+                <h5>Training Office</h5>
+                <h6>Handico</h6>
+                <p><i class="fas fa-map-marker-alt"></i> 11F Handico Building, Pham Hung Road, Nam Tu Liem Dist., Ha Noi</p>
+              </div>
+              <div class="office">
+                <h5>DaNang Office</h5>
+                <p><i class="fas fa-map-marker-alt"></i> 4F, FHome Building, 16 Ly Thuong Kiet Str., Hai Chau district, Da Nang</p>
+              </div>
+              <div class="office">
+                <h5>Ho Chi Minh Office</h5>
+                <p><i class="fas fa-map-marker-alt"></i> 8F Nice building, 467 Dien Bien Phu Str., Ward 25, Binh Thanh district, HCMC</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__middle">
+            <h5>Find more about our international offices</h5>
+            <ul class="inactive">
+              <li>Tokyo Office</li>
+              <li>Cebu Office</li>
+              <li>Phnom Penh Office</li>
+              <li> <a class="world-map"><i class="fas fa-map-marker-alt"></i> Check world map</a></li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <p class="copy">@ 2019 Sun* Inc. All rights reserved.</p>
+            <div class="social">
+              <p>Follow Life at Sun* on:</p>
+              <ul>
+                <li><a href="https://www.facebook.com/SunAsteriskVietnam/"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/sunasterisk/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
